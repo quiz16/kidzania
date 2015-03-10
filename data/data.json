@@ -1,0 +1,9 @@
+{
+	{
+		'name'   : 'Honda City',
+		'color'  : [ 'red', 'white', 'blue', 'black' ],
+		'decals' : [ 'wheel1', 'wheel2', 'wheel3' ],
+		'tires'  : [  ],
+		'grills' : [ ]
+	}
+}
