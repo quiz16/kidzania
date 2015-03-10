@@ -1,33 +1,44 @@
 html, body {
-  height : 100%;
+    height : 100%;
 }
 
 .container{
-  width  : 1200px;
-  height : 640px;
+    width  : 1200px;
+    height : 640px;
 }
 
 .vertical-center {
-  height : 100%;
-  width  : 100%;
+    height : 100%;
+    width  : 100%;
 
-  text-align : center;  /* align the inline(-block) elements horizontally */
+    text-align : center;  /* align the inline(-block) elements horizontally */
 }
 
 .vertical-center:before {    /* create a full-height inline block pseudo=element */
-  content        : ' ';
-  display        : inline-block;
-  vertical-align : middle;  /* vertical alignment of the inline element */
-  height         : 100%;
+    content        : ' ';
+    display        : inline-block;
+    vertical-align : middle;  /* vertical alignment of the inline element */
+    height         : 100%;
 }
 
 .vertical-center > .container {
-  max-width        : 100%;
-  background-color : gold;
+    max-width        : 100%;
+    background-color : gold;
 
-  display        : inline-block;
-  vertical-align : middle;  /* vertical alignment of the inline element */
-  font           : 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;        /* <-- reset the font property */
+    display        : inline-block;
+    vertical-align : middle;  /* vertical alignment of the inline element */
+    font           : 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;        /* <-- reset the font property */
 }
 
+.carousel {
+    height : 298px;
+    width  : 100%;
+}
 
+.carousel-inner {
+    height : 298px;
+}
+
+.test {
+    margin-right : 10px !important;
+}
