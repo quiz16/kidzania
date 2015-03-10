@@ -1,3 +1,4 @@
+( function () {
 /* jshint -W098 */
 'use strict';
 
@@ -51,3 +52,5 @@ function changeSide( rotation ) {
 		break;
 	}
 }
+
+} )();
