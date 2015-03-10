@@ -31,12 +31,12 @@ html, body {
 }
 
 .carousel {
-    height : 298px;
+    height : 640px;
     width  : 100%;
 }
 
 .carousel-inner {
-    height : 298px;
+    height : 100%;
 }
 
 .test {
