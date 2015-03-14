@@ -12,6 +12,8 @@ var currentCar = {
 	'grills' : ''
 };
 
+var selectCar = 'car1';
+
 // list of sides
 //  semi-left = when car is displayed diagonally at the driver side
 var sides = [ 'semi-left', 'left', 'back', 'right', 'semi-right', 'front' ];
@@ -52,5 +54,24 @@ function changeSide( rotation ) {
 		break;
 	}
 }
+
+function carousel () {
+	$( '#carousel' ).carousel( { interval : 0 } );
+	$( '#carousel' ).bind( 'slid.bs.carousel', function ( e ) {
+	   var carouselData = $( this ).data( 'bs.carousel' );
+
+		selectCar = carouselData.$element.find( '.item.active' ).attr( 'id' )
+	} );
+
+	$( '.car-select' ).on( 'click', function () {
+		$( '#customizer-div' ).removeClass( 'hidden' );
+		$( '#main-div' ) .addClass( 'hidden' );
+		$( '#carName' ).text( selectCar );
+	} );
+
+}
+
+
+carousel();
 
 } )();
